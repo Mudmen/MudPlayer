@@ -1,0 +1,532 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE242CFA1C48D5EC009E6C84 /* AVPlayerItem+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE242CF31C48D5EC009E6C84 /* AVPlayerItem+extension.swift */; };
+		AE242CFB1C48D5EC009E6C84 /* Double+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE242CF41C48D5EC009E6C84 /* Double+extension.swift */; };
+		AE242CFC1C48D5EC009E6C84 /* MudPlayerControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE242CF61C48D5EC009E6C84 /* MudPlayerControls.swift */; };
+		AE242CFD1C48D5EC009E6C84 /* MudPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE242CF71C48D5EC009E6C84 /* MudPlayerView.swift */; };
+		AE242CFE1C48D5EC009E6C84 /* MudPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE242CF81C48D5EC009E6C84 /* MudPlayerViewController.swift */; };
+		AE242CFF1C48D5EC009E6C84 /* PlayerSource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AE242CF91C48D5EC009E6C84 /* PlayerSource.bundle */; };
+		AEC6751F1C4750A7008C3BB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC6751E1C4750A7008C3BB2 /* AppDelegate.swift */; };
+		AEC675211C4750A7008C3BB2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC675201C4750A7008C3BB2 /* ViewController.swift */; };
+		AEC675261C4750A7008C3BB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEC675251C4750A7008C3BB2 /* Assets.xcassets */; };
+		AEC675291C4750A7008C3BB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEC675271C4750A7008C3BB2 /* LaunchScreen.storyboard */; };
+		AEC675341C4750A7008C3BB2 /* MudPlayerExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC675331C4750A7008C3BB2 /* MudPlayerExampleTests.swift */; };
+		AEC6753F1C4750A7008C3BB2 /* MudPlayerExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC6753E1C4750A7008C3BB2 /* MudPlayerExampleUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AEC675301C4750A7008C3BB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AEC675131C4750A7008C3BB2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AEC6751A1C4750A7008C3BB2;
+			remoteInfo = MudPlayerExample;
+		};
+		AEC6753B1C4750A7008C3BB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AEC675131C4750A7008C3BB2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AEC6751A1C4750A7008C3BB2;
+			remoteInfo = MudPlayerExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AE242CF31C48D5EC009E6C84 /* AVPlayerItem+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVPlayerItem+extension.swift"; sourceTree = "<group>"; };
+		AE242CF41C48D5EC009E6C84 /* Double+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+extension.swift"; sourceTree = "<group>"; };
+		AE242CF61C48D5EC009E6C84 /* MudPlayerControls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MudPlayerControls.swift; sourceTree = "<group>"; };
+		AE242CF71C48D5EC009E6C84 /* MudPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MudPlayerView.swift; sourceTree = "<group>"; };
+		AE242CF81C48D5EC009E6C84 /* MudPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MudPlayerViewController.swift; sourceTree = "<group>"; };
+		AE242CF91C48D5EC009E6C84 /* PlayerSource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = PlayerSource.bundle; sourceTree = "<group>"; };
+		AEC6751B1C4750A7008C3BB2 /* MudPlayerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MudPlayerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEC6751E1C4750A7008C3BB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AEC675201C4750A7008C3BB2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AEC675251C4750A7008C3BB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AEC675281C4750A7008C3BB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AEC6752A1C4750A7008C3BB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEC6752F1C4750A7008C3BB2 /* MudPlayerExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MudPlayerExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEC675331C4750A7008C3BB2 /* MudPlayerExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MudPlayerExampleTests.swift; sourceTree = "<group>"; };
+		AEC675351C4750A7008C3BB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEC6753A1C4750A7008C3BB2 /* MudPlayerExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MudPlayerExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEC6753E1C4750A7008C3BB2 /* MudPlayerExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MudPlayerExampleUITests.swift; sourceTree = "<group>"; };
+		AEC675401C4750A7008C3BB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AEC675181C4750A7008C3BB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEC6752C1C4750A7008C3BB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEC675371C4750A7008C3BB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AE242CF21C48D5EC009E6C84 /* MudPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				AE242CF31C48D5EC009E6C84 /* AVPlayerItem+extension.swift */,
+				AE242CF41C48D5EC009E6C84 /* Double+extension.swift */,
+				AE242CF61C48D5EC009E6C84 /* MudPlayerControls.swift */,
+				AE242CF71C48D5EC009E6C84 /* MudPlayerView.swift */,
+				AE242CF81C48D5EC009E6C84 /* MudPlayerViewController.swift */,
+				AE242CF91C48D5EC009E6C84 /* PlayerSource.bundle */,
+			);
+			path = MudPlayer;
+			sourceTree = "<group>";
+		};
+		AEC675121C4750A7008C3BB2 = {
+			isa = PBXGroup;
+			children = (
+				AEC6751D1C4750A7008C3BB2 /* MudPlayerExample */,
+				AEC675321C4750A7008C3BB2 /* MudPlayerExampleTests */,
+				AEC6753D1C4750A7008C3BB2 /* MudPlayerExampleUITests */,
+				AEC6751C1C4750A7008C3BB2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AEC6751C1C4750A7008C3BB2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AEC6751B1C4750A7008C3BB2 /* MudPlayerExample.app */,
+				AEC6752F1C4750A7008C3BB2 /* MudPlayerExampleTests.xctest */,
+				AEC6753A1C4750A7008C3BB2 /* MudPlayerExampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AEC6751D1C4750A7008C3BB2 /* MudPlayerExample */ = {
+			isa = PBXGroup;
+			children = (
+				AE242CF21C48D5EC009E6C84 /* MudPlayer */,
+				AEC6751E1C4750A7008C3BB2 /* AppDelegate.swift */,
+				AEC675201C4750A7008C3BB2 /* ViewController.swift */,
+				AEC675251C4750A7008C3BB2 /* Assets.xcassets */,
+				AEC675271C4750A7008C3BB2 /* LaunchScreen.storyboard */,
+				AEC6752A1C4750A7008C3BB2 /* Info.plist */,
+			);
+			path = MudPlayerExample;
+			sourceTree = "<group>";
+		};
+		AEC675321C4750A7008C3BB2 /* MudPlayerExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				AEC675331C4750A7008C3BB2 /* MudPlayerExampleTests.swift */,
+				AEC675351C4750A7008C3BB2 /* Info.plist */,
+			);
+			path = MudPlayerExampleTests;
+			sourceTree = "<group>";
+		};
+		AEC6753D1C4750A7008C3BB2 /* MudPlayerExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AEC6753E1C4750A7008C3BB2 /* MudPlayerExampleUITests.swift */,
+				AEC675401C4750A7008C3BB2 /* Info.plist */,
+			);
+			path = MudPlayerExampleUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AEC6751A1C4750A7008C3BB2 /* MudPlayerExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEC675431C4750A7008C3BB2 /* Build configuration list for PBXNativeTarget "MudPlayerExample" */;
+			buildPhases = (
+				AEC675171C4750A7008C3BB2 /* Sources */,
+				AEC675181C4750A7008C3BB2 /* Frameworks */,
+				AEC675191C4750A7008C3BB2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MudPlayerExample;
+			productName = MudPlayerExample;
+			productReference = AEC6751B1C4750A7008C3BB2 /* MudPlayerExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AEC6752E1C4750A7008C3BB2 /* MudPlayerExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEC675461C4750A7008C3BB2 /* Build configuration list for PBXNativeTarget "MudPlayerExampleTests" */;
+			buildPhases = (
+				AEC6752B1C4750A7008C3BB2 /* Sources */,
+				AEC6752C1C4750A7008C3BB2 /* Frameworks */,
+				AEC6752D1C4750A7008C3BB2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AEC675311C4750A7008C3BB2 /* PBXTargetDependency */,
+			);
+			name = MudPlayerExampleTests;
+			productName = MudPlayerExampleTests;
+			productReference = AEC6752F1C4750A7008C3BB2 /* MudPlayerExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AEC675391C4750A7008C3BB2 /* MudPlayerExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEC675491C4750A7008C3BB2 /* Build configuration list for PBXNativeTarget "MudPlayerExampleUITests" */;
+			buildPhases = (
+				AEC675361C4750A7008C3BB2 /* Sources */,
+				AEC675371C4750A7008C3BB2 /* Frameworks */,
+				AEC675381C4750A7008C3BB2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AEC6753C1C4750A7008C3BB2 /* PBXTargetDependency */,
+			);
+			name = MudPlayerExampleUITests;
+			productName = MudPlayerExampleUITests;
+			productReference = AEC6753A1C4750A7008C3BB2 /* MudPlayerExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AEC675131C4750A7008C3BB2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = Mudmen;
+				TargetAttributes = {
+					AEC6751A1C4750A7008C3BB2 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					AEC6752E1C4750A7008C3BB2 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = AEC6751A1C4750A7008C3BB2;
+					};
+					AEC675391C4750A7008C3BB2 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = AEC6751A1C4750A7008C3BB2;
+					};
+				};
+			};
+			buildConfigurationList = AEC675161C4750A7008C3BB2 /* Build configuration list for PBXProject "MudPlayerExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AEC675121C4750A7008C3BB2;
+			productRefGroup = AEC6751C1C4750A7008C3BB2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AEC6751A1C4750A7008C3BB2 /* MudPlayerExample */,
+				AEC6752E1C4750A7008C3BB2 /* MudPlayerExampleTests */,
+				AEC675391C4750A7008C3BB2 /* MudPlayerExampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AEC675191C4750A7008C3BB2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEC675291C4750A7008C3BB2 /* LaunchScreen.storyboard in Resources */,
+				AE242CFF1C48D5EC009E6C84 /* PlayerSource.bundle in Resources */,
+				AEC675261C4750A7008C3BB2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEC6752D1C4750A7008C3BB2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEC675381C4750A7008C3BB2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AEC675171C4750A7008C3BB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE242CFE1C48D5EC009E6C84 /* MudPlayerViewController.swift in Sources */,
+				AE242CFC1C48D5EC009E6C84 /* MudPlayerControls.swift in Sources */,
+				AE242CFB1C48D5EC009E6C84 /* Double+extension.swift in Sources */,
+				AE242CFD1C48D5EC009E6C84 /* MudPlayerView.swift in Sources */,
+				AEC675211C4750A7008C3BB2 /* ViewController.swift in Sources */,
+				AE242CFA1C48D5EC009E6C84 /* AVPlayerItem+extension.swift in Sources */,
+				AEC6751F1C4750A7008C3BB2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEC6752B1C4750A7008C3BB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEC675341C4750A7008C3BB2 /* MudPlayerExampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEC675361C4750A7008C3BB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEC6753F1C4750A7008C3BB2 /* MudPlayerExampleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AEC675311C4750A7008C3BB2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AEC6751A1C4750A7008C3BB2 /* MudPlayerExample */;
+			targetProxy = AEC675301C4750A7008C3BB2 /* PBXContainerItemProxy */;
+		};
+		AEC6753C1C4750A7008C3BB2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AEC6751A1C4750A7008C3BB2 /* MudPlayerExample */;
+			targetProxy = AEC6753B1C4750A7008C3BB2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AEC675271C4750A7008C3BB2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AEC675281C4750A7008C3BB2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AEC675411C4750A7008C3BB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AEC675421C4750A7008C3BB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AEC675441C4750A7008C3BB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MudPlayerExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mudmen.MudPlayerExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AEC675451C4750A7008C3BB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MudPlayerExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mudmen.MudPlayerExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AEC675471C4750A7008C3BB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MudPlayerExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mudmen.MudPlayerExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MudPlayerExample.app/MudPlayerExample";
+			};
+			name = Debug;
+		};
+		AEC675481C4750A7008C3BB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MudPlayerExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mudmen.MudPlayerExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MudPlayerExample.app/MudPlayerExample";
+			};
+			name = Release;
+		};
+		AEC6754A1C4750A7008C3BB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MudPlayerExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mudmen.MudPlayerExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MudPlayerExample;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		AEC6754B1C4750A7008C3BB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MudPlayerExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mudmen.MudPlayerExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MudPlayerExample;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AEC675161C4750A7008C3BB2 /* Build configuration list for PBXProject "MudPlayerExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEC675411C4750A7008C3BB2 /* Debug */,
+				AEC675421C4750A7008C3BB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AEC675431C4750A7008C3BB2 /* Build configuration list for PBXNativeTarget "MudPlayerExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEC675441C4750A7008C3BB2 /* Debug */,
+				AEC675451C4750A7008C3BB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AEC675461C4750A7008C3BB2 /* Build configuration list for PBXNativeTarget "MudPlayerExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEC675471C4750A7008C3BB2 /* Debug */,
+				AEC675481C4750A7008C3BB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AEC675491C4750A7008C3BB2 /* Build configuration list for PBXNativeTarget "MudPlayerExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEC6754A1C4750A7008C3BB2 /* Debug */,
+				AEC6754B1C4750A7008C3BB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AEC675131C4750A7008C3BB2 /* Project object */;
+}

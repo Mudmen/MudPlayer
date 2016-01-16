@@ -13,7 +13,6 @@ protocol MudPlayerControlsDelegate: NSObjectProtocol {
     func playerControls(controls: MudPlayerControls,playOrPauseDidSelected sender: AnyObject?)
     func playerControls(controls: MudPlayerControls,progressValueChanged progress: Float,shouldPlay: Bool)
     func playerControls(controls: MudPlayerControls,closeDidSelected sender: AnyObject?)
-    func playerControls(controls: MudPlayerControls,shareDidSelected sender: AnyObject?)
 }
 
 @available(iOS 7.0, *)
@@ -36,12 +35,6 @@ class MudPlayerControls: UIView {
     @abstract	控制视频的暂停 与播放
     */
     private var closeButton: UIButton!
-    
-    /*!
-    @property playButton
-    @abstract	控制视频的暂停 与播放
-    */
-   private var shareButton: UIButton!
     
     /*!
     @property timeLabel
@@ -144,15 +137,7 @@ class MudPlayerControls: UIView {
         self.closeButton.setImage(UIImage(named: "PlayerSource.bundle/player_back"), forState: UIControlState.Normal)
         self.closeButton.backgroundColor = UIColor.clearColor()
         self.addSubview(self.closeButton)
-        
-        self.shareButton = UIButton(type: UIButtonType.Custom)
-        self.shareButton.frame = CGRectMake(0, 0, 47, 57)
-        self.shareButton.addTarget(self, action: "buttonAction:", forControlEvents: UIControlEvents.TouchUpInside)
-        self.shareButton.setImage(UIImage(named: "PlayerSource.bundle/player_share"), forState: UIControlState.Normal)
-        self.shareButton.translatesAutoresizingMaskIntoConstraints = false
-        self.shareButton.backgroundColor = UIColor.clearColor()
-        self.addSubview(self.shareButton)
-        
+    
         self.grayPlayButton = UIButton(type: UIButtonType.Custom)
         self.grayPlayButton.frame = CGRectMake(0, 0, 40, 40)
         self.grayPlayButton.addTarget(self, action: "buttonAction:", forControlEvents: UIControlEvents.TouchUpInside)
@@ -201,13 +186,6 @@ class MudPlayerControls: UIView {
         let timeLabelBottomConstraint = NSLayoutConstraint(item: self.timeLabel, attribute: NSLayoutAttribute.Bottom, relatedBy: NSLayoutRelation.Equal, toItem: self.bottomBar, attribute: NSLayoutAttribute.Bottom, multiplier: 1, constant: 0)
         self.bottomBar.addConstraints([timeLabelHeightConstraint,timeLabelWidthConstraint,timeLabelRightConstraint,timeLabelBottomConstraint])
         
-        let shareButtonHeightConstraint = NSLayoutConstraint(item: self.shareButton, attribute: NSLayoutAttribute.Height, relatedBy: NSLayoutRelation.Equal, toItem: nil, attribute: NSLayoutAttribute.NotAnAttribute, multiplier: 1, constant: 57)
-        let shareButtonWidthConstraint = NSLayoutConstraint(item: self.shareButton, attribute: NSLayoutAttribute.Width, relatedBy: NSLayoutRelation.Equal, toItem: nil, attribute: NSLayoutAttribute.NotAnAttribute, multiplier: 1, constant: 47)
-        let shareButtonRightConstraint = NSLayoutConstraint(item: self.shareButton, attribute: NSLayoutAttribute.Right, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.Right, multiplier: 1, constant: 0)
-        let shareButtonTopConstraint = NSLayoutConstraint(item: self.shareButton, attribute: NSLayoutAttribute.Top
-            , relatedBy: NSLayoutRelation.Equal, toItem: self.closeButton, attribute: NSLayoutAttribute.Top, multiplier: 1, constant: 0)
-        self.addConstraints([shareButtonHeightConstraint,shareButtonWidthConstraint,shareButtonRightConstraint,shareButtonTopConstraint])
-        
         let grayPlayButtonHeightConstraint = NSLayoutConstraint(item: self.grayPlayButton, attribute: NSLayoutAttribute.Height, relatedBy: NSLayoutRelation.Equal, toItem: nil, attribute: NSLayoutAttribute.NotAnAttribute, multiplier: 1, constant: 40)
         let grayPlayButtonWidthConstraint = NSLayoutConstraint(item: self.grayPlayButton, attribute: NSLayoutAttribute.Width, relatedBy: NSLayoutRelation.Equal, toItem: nil, attribute: NSLayoutAttribute.NotAnAttribute, multiplier: 1, constant: 40)
         let grayPlayButtonRightConstraint = NSLayoutConstraint(item: self.grayPlayButton, attribute: NSLayoutAttribute.CenterX, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.CenterX, multiplier: 1, constant: 0)
@@ -220,7 +198,6 @@ class MudPlayerControls: UIView {
         UIView.animateWithDuration(0.25) { () -> Void in
             self.bottomBar.alpha = viewAlpha
             self.closeButton.alpha = viewAlpha
-            self.shareButton.alpha = viewAlpha
         }
     }
     
@@ -267,10 +244,6 @@ class MudPlayerControls: UIView {
         } else if sender == self.closeButton {
             if self.delegate != nil {
                 self.delegate?.playerControls(self, closeDidSelected: sender)
-            }
-        } else if sender == self.shareButton {
-            if self.delegate != nil {
-                self.delegate?.playerControls(self, shareDidSelected: sender)
             }
         }
     }

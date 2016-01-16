@@ -116,12 +116,12 @@ public class MudPlayerViewContoller: UIViewController {
     public override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         //info.plist: View controller-based status bar appearance set NO
-        UIApplication.sharedApplication().setStatusBarHidden(true, withAnimation: UIStatusBarAnimation.None)
+        UIApplication.sharedApplication().keyWindow?.windowLevel = UIWindowLevelStatusBar
     }
     
     public override func viewWillDisappear(animated: Bool) {
          super.viewWillDisappear(animated)
-        UIApplication.sharedApplication().setStatusBarHidden(false, withAnimation: UIStatusBarAnimation.None)
+        UIApplication.sharedApplication().keyWindow?.windowLevel = UIWindowLevelNormal
     }
     
     //MARK: - Private 
@@ -219,15 +219,6 @@ extension MudPlayerViewContoller: MudPlayerControlsDelegate {
     }
     
     func playerControls(controls: MudPlayerControls,closeDidSelected sender: AnyObject?) {
-        self.setPlayerWithRate(0)
-        if self.timeObserver != nil {
-            self.player.removeTimeObserver(self.timeObserver!)
-        }
-        self.view.removeFromSuperview()
-        self.removeFromParentViewController()
-    }
-    
-    func playerControls(controls: MudPlayerControls,shareDidSelected sender: AnyObject?) {
         self.setPlayerWithRate(0)
         if self.timeObserver != nil {
             self.player.removeTimeObserver(self.timeObserver!)
